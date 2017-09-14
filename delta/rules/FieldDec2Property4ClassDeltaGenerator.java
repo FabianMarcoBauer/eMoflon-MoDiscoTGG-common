@@ -42,10 +42,10 @@ public class FieldDec2Property4ClassDeltaGenerator implements DeltaGenerator {
 		// create primitive types
 		String name = Long.toString(r.nextLong(), 32);
 		// create edges
+		container.getBodyDeclarations().add(fieldDeclaration);
 		fieldDeclaration.setType(typeAccess);
 		fieldDeclaration.getFragments().add(vdf);
 		typeAccess.setType(type);
-		container.getBodyDeclarations().add(fieldDeclaration);
 		// set primitive types
 		vdf.setName(name);
 
